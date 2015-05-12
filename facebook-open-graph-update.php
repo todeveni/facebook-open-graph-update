@@ -61,7 +61,7 @@ class FacebookOpenGraphUpdate {
 
     public function edit_row_actions($actions, $post) {
         $actions = array_merge($actions, array(
-            'facebook_open_graph_update' => sprintf('<a href="#" data-post-id="%d">'. __('Facebook Open Graph Update', 'facebook-open-graph-update') . '</a>', $post->ID)
+            'facebook_open_graph_update' => sprintf('<a href="#" data-post-id="%d">'. __('Facebook Open Graph update', 'facebook-open-graph-update') . '</a>', $post->ID)
         ));
 
         return $actions;
