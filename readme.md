@@ -25,5 +25,8 @@ Once 50 actions (likes, shares and comments) have been associated with an object
 
 ## Changelog
 
+### 1.1.0
+* Allow individual posts to be updated from edit listing
+
 ### 1.0.0
 * Initial release
