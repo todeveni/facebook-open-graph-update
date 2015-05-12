@@ -1,7 +1,7 @@
 # Facebook Open Graph update
 Contributors: skithund  
 Tags: facebook, opengraph  
-Requires at least: 2.7.0  
+Requires at least: 2.8.0  
 Tested up to: 4.2.2  
 Stable tag: trunk  
 License: GPLv3  
