@@ -70,7 +70,7 @@ class FacebookOpenGraphUpdate {
     public function ajax() {
         if (check_ajax_referer('facebook-open-graph-update', 'nonce')) {
             if (isset($_POST['post_id']) && intval($_POST['post_id']) > 0) {
-                if ( $this->scrape(intval($_POST['post_id']) ) {
+                if ( $this->scrape(intval($_POST['post_id'])) ) {
                     print 'success';
                 } else {
                     print 'fail';
