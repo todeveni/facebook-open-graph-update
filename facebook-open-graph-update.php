@@ -70,22 +70,19 @@ class FacebookOpenGraphUpdate {
     public function ajax() {
         if (check_ajax_referer('facebook-open-graph-update', 'nonce')) {
             if (isset($_POST['post_id']) && intval($_POST['post_id']) > 0) {
-                $this->scrape(intval($_POST['post_id']));
-
-                wp_send_json(array(
-                    'success' => true
-                ));
+                if ( $this->scrape(intval($_POST['post_id']) ) {
+                    print 'success';
+                } else {
+                    print 'fail';
+                }
+                wp_die();
             } else {
-                wp_send_json_error(array(
-                    'success' => false,
-                    'error'   => 'post_id'
-                ));
+                print 'fail';
+                wp_die();
             }
         } else {
-            wp_send_json_error(array(
-                'success' => false,
-                'error'   => 'nonce'
-            ));
+            print 'fail';
+            wp_die();
         }
     }
 
