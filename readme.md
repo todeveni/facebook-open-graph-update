@@ -2,7 +2,7 @@
 Contributors: skithund  
 Tags: facebook, opengraph, open graph, og, graph api  
 Requires at least: 2.8.0  
-Tested up to: 4.2.2  
+Tested up to: 4.4  
 Stable tag: trunk  
 License: GPLv3  
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
