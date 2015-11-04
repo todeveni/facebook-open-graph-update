@@ -25,6 +25,9 @@ Once 50 actions (likes, shares and comments) have been associated with an object
 
 ## Changelog
 
+### 1.2.0
+* Do not scrape if blog is not public
+
 ### 1.1.0
 * Allow individual posts to be updated from edit listing
 
