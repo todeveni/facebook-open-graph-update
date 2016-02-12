@@ -4,7 +4,7 @@
  * Plugin Name: Facebook Open Graph update
  * Plugin URI: https://wordpress.org/plugins/facebook-open-graph-update/
  * Description: Updates Facebook Open Graph when saving/updating a post
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: Toni Viemerö
  * Author URI: http://selfdestruct.net/
  * License: GPLv3
@@ -60,9 +60,11 @@ class FacebookOpenGraphUpdate {
     }
 
     public function edit_row_actions($actions, $post) {
-        $actions = array_merge($actions, array(
-            'facebook_open_graph_update' => sprintf('<a href="#" data-post-id="%d">'. __('Facebook Open Graph update', 'facebook-open-graph-update') . '</a>', $post->ID)
-        ));
+        if (current_user_can('edit_post', $post->ID)) {
+            $actions = array_merge($actions, array(
+                'facebook_open_graph_update' => sprintf('<a href="#" data-post-id="%d">'. __('Facebook Open Graph update', 'facebook-open-graph-update') . '</a>', $post->ID)
+            ));
+        }
 
         return $actions;
     }
