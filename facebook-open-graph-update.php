@@ -77,15 +77,14 @@ class FacebookOpenGraphUpdate {
                 } else {
                     print 'fail';
                 }
-                wp_die();
             } else {
                 print 'fail';
-                wp_die();
             }
         } else {
             print 'fail';
-            wp_die();
         }
+
+        wp_die();
     }
 
     public function scrape($post_id = null) {
