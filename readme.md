@@ -1,6 +1,6 @@
 # Facebook Open Graph update
 Contributors: skithund  
-Tags: facebook, opengraph, open graph, og, graph api  
+Tags: facebook, opengraph, open graph, og, graph api, cache  
 Requires at least: 2.8.0  
 Tested up to: 4.5.0  
 Stable tag: trunk  
@@ -11,7 +11,8 @@ Updates Facebook Open Graph when publishing or updating a post.
 
 ## Description
 
-Updates Facebook Open Graph when publishing or updating a post. Also known as "Facebook scraping".
+Updates Facebook Open Graph when publishing or updating a post. Also known as "Facebook scraping" or pre-caching.
+[Pre-caching](https://developers.facebook.com/docs/sharing/best-practices#precaching) fixes a known problem when content is shared for the first time and the image is missing.
 
 ## Installation
 
