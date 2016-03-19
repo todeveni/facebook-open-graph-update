@@ -26,6 +26,9 @@ Once 50 actions (likes, shares and comments) have been associated with an object
 
 ## Changelog
 
+### 1.4.0
+* Instantiate class on `plugins_loaded`
+
 ### 1.3.0
 * Only allow scraping of individual post if the user can edit it
 
