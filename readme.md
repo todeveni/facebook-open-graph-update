@@ -2,7 +2,7 @@
 Contributors: skithund  
 Tags: facebook, opengraph, open graph, og, graph api, cache  
 Requires at least: 2.8.0  
-Tested up to: 4.5.0  
+Tested up to: 4.6.1
 Stable tag: trunk  
 License: GPLv3  
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -25,6 +25,9 @@ Updates Facebook Open Graph when publishing or updating a post. Also known as "F
 Once 50 actions (likes, shares and comments) have been associated with an object, you won't be able to update its title.
 
 ## Changelog
+
+### 1.5.0
+* Scrape on `publish_post`
 
 ### 1.4.0
 * Instantiate class on `plugins_loaded`
