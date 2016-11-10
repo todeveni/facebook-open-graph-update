@@ -26,6 +26,9 @@ Once 50 actions (likes, shares and comments) have been associated with an object
 
 ## Changelog
 
+### 1.6.0
+* Don't scrape menu items
+
 ### 1.5.0
 * Scrape on `publish_post`
 
