@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress sans VIP">
+	<description>WordPress ruleset without VIP rules</description>
+
+	<exclude-pattern>/plugin-update-checker/*</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+
+	<rule ref="WordPress-Core"/>
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-VIP"/>
+</ruleset>
