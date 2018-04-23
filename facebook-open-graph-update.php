@@ -108,8 +108,9 @@ class FacebookOpenGraphUpdate {
 
 		if ( intval( $post_id ) > 0 ) {
 			$params = http_build_query( array(
-				'id'     => esc_url( get_permalink( $post_id ) ),
-				'scrape' => true,
+				'id'           => esc_url( get_permalink( $post_id ) ),
+				'scrape'       => true,
+				'access_token' => $this->get_access_token(),
 			) );
 
 			$response = wp_remote_post( $this->api_url . '?' . $params );
@@ -128,6 +129,12 @@ class FacebookOpenGraphUpdate {
 		} else {
 			return false;
 		}
+	}
+
+	public function get_access_token() {
+		$access_token = apply_filters( 'facebook_open_graph_update_access_token', '' );
+
+		return $access_token;
 	}
 }
 
