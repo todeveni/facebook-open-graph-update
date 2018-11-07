@@ -10,6 +10,8 @@
  * License: GPLv3
  */
 
+require_once dirname( __FILE__ ) . '/class-open-graph-update-setting.php';
+
 class FacebookOpenGraphUpdate {
 	private $api_url = 'https://graph.facebook.com/';
 
@@ -132,7 +134,7 @@ class FacebookOpenGraphUpdate {
 	}
 
 	public function get_access_token() {
-		$access_token = apply_filters( 'facebook_open_graph_update_access_token', '' );
+		$access_token = get_option( 'facebook-open-graph-update-access-token', '' );
 
 		return $access_token;
 	}
